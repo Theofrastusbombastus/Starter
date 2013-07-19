@@ -2,3 +2,9 @@
 /Help.class
 /Parser.class
 /CommandList.class
+/Attack.class
+/Examine.class
+/Inventory.class
+/Quit.class
+/Stats.class
+/Use.class
