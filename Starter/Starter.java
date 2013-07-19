@@ -9,6 +9,7 @@ public class Starter {
 		Parser parser = new Parser();
 		Vector<String> temp = new Vector<String>();
 		temp = parser.parse("Hello Chudi how are you");
+		System.out.println(temp);
 	}
 
 }
