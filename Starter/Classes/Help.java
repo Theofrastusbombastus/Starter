@@ -8,7 +8,7 @@ public class Help extends Command {
 	CommandList clist = new CommandList();
 	public Help(){
 		this.setName("Help");
-		this.setInfo("Lists available commands and how to use a command");
+		this.setDescription("Lists available commands and how to use a command");
 	}
 	@Override
 	boolean validate(String[] tokens) {
@@ -21,8 +21,8 @@ public class Help extends Command {
 		return true;
 	}
 	public void printCommands(){
-		for(Command item : clist.list){
-			System.out.println(item.getName());
+		for(Command e : clist.list){
+			System.out.println(e.getName());
 		}
 		
 	}

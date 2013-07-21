@@ -1,8 +1,8 @@
 package Classes;
-//import java.lang.String;
-public abstract class Command {
-	private String description,name;
-	abstract boolean validate(String[] tokens);
+
+public abstract class Item {
+	private String description, name;
+	private int price;
 	
 	
 	public void setDescription(String info){
@@ -11,11 +11,19 @@ public abstract class Command {
 	public void setName(String info){
 		this.name = info;
 	}
+	public void setPrice(int price){
+		this.price = price;
+	}
+	
+	
 	public String getDescription(){
 		return this.description;
 	}
 	public String getName(){
 		return this.name;
+	}
+	public int getPrice(){
+		return this.price;
 	}
 	
 	
