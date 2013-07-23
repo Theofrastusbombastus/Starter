@@ -1,4 +1,7 @@
-package Classes;
+package classes;
+
+import java.util.Vector;
+
 /*
  * Help - returns a list of commands available to users
  * Help [command] returns a description of how to use [command]
@@ -11,7 +14,7 @@ public class Help extends Command {
 		this.setDescription("Lists available commands and how to use a command");
 	}
 	@Override
-	boolean validate(String[] tokens) {
+	boolean validate(Vector<String> tokens) {
 		// TODO Auto-generated method stub
 		return false;
 	}

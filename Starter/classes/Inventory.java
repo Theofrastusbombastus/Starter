@@ -1,4 +1,4 @@
-package Classes;
+package classes;
 
 import java.util.Vector;
 
@@ -34,5 +34,8 @@ public class Inventory {
 		for(Item e: itemList){
 			System.out.println(e.getName());
 		}
+	}
+	public Vector<Item> getItemList(){
+		return this.itemList;
 	}
 }

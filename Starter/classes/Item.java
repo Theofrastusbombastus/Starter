@@ -1,7 +1,9 @@
-package Classes;
+package classes;
 
-public abstract class Character {
-	private String description,name, type;
+public abstract class Item {
+	private String description, name;
+	private int price;
+	
 	
 	public void setDescription(String info){
 		this.description = info;
@@ -9,9 +11,10 @@ public abstract class Character {
 	public void setName(String info){
 		this.name = info;
 	}
-	public void setType(String type){
-		this.type = type;
+	public void setPrice(int price){
+		this.price = price;
 	}
+	
 	
 	public String getDescription(){
 		return this.description;
@@ -19,8 +22,9 @@ public abstract class Character {
 	public String getName(){
 		return this.name;
 	}
-	public String getType(){
-		return this.type;
+	public int getPrice(){
+		return this.price;
 	}
+	
 	
 }

@@ -1,5 +1,6 @@
 import java.util.Vector;
-import Classes.Parser;
+
+import classes.Parser;
 
 
 public class Starter {
@@ -13,3 +14,27 @@ public class Starter {
 	}
 
 }
+
+
+/*
+	Dialogue-
+	Text
+	Option1...
+	OptionN
+	
+	Dialogue object
+	String text
+	Vector<Options> options
+	
+	Option object
+	string text
+	function action
+	
+	Dialogue a
+	text = "Hello traveler"
+	options = [a,b,c]
+	
+	Option a.text = "Hello sir"
+	a.action = callDialogue2(NPC NAME)
+
+*/

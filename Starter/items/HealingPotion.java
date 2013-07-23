@@ -1,6 +1,6 @@
-package Items;
+package items;
 
-import Classes.Potion;
+import classes.Potion;
 
 public class HealingPotion extends Potion{
 	
@@ -12,6 +12,7 @@ public class HealingPotion extends Potion{
 		this.setPrice(price);
 		this.setDescription(description);
 		this.setName(name);
+		this.setType("Health");
 	}
 	
 	public int getHealAmount(){

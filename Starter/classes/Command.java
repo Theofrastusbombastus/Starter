@@ -1,8 +1,11 @@
-package Classes;
+package classes;
 
-public abstract class Item {
-	private String description, name;
-	private int price;
+import java.util.Vector;
+
+//import java.lang.String;
+public abstract class Command {
+	private String description,name;
+	abstract boolean validate(Vector<String> tokens);
 	
 	
 	public void setDescription(String info){
@@ -11,19 +14,11 @@ public abstract class Item {
 	public void setName(String info){
 		this.name = info;
 	}
-	public void setPrice(int price){
-		this.price = price;
-	}
-	
-	
 	public String getDescription(){
 		return this.description;
 	}
 	public String getName(){
 		return this.name;
-	}
-	public int getPrice(){
-		return this.price;
 	}
 	
 	
